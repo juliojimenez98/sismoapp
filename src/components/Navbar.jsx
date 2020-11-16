@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <a
             className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
-            href="#pablo"
+            href="/"
           >
             Sismo app
           </a>
@@ -38,28 +38,28 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                href="#pablo"
+                href="/"
               >
                 <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
-                <span className="ml-2">Share</span>
+                <span className="ml-2">Recargar Página</span>
               </a>
             </li>
             <li className="nav-item">
               <a
                 className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                href="#pablo"
+                href="https://www.google.com/"
               >
                 <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i>
-                <span className="ml-2">Tweet</span>
+                <span className="ml-2">PokeApp</span>
               </a>
             </li>
             <li className="nav-item">
               <a
                 className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                href="#pablo"
+                href="#about"
               >
                 <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i>
-                <span className="ml-2">Pin</span>
+                <span className="ml-2">About</span>
               </a>
             </li>
           </ul>
