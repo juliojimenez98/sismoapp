@@ -1,6 +1,7 @@
 import React from "react";
 
 function Card({ item }) {
+  console.log(item.Magnitud.trim().substring(0, 3));
   return (
     <div className="lg:flex shadow-xl rounded-lg border m-12 border-gray-400">
       <div className="bg-teal-900  rounded-lg lg:w-2/12 py-4 block h-auto shadow-inner">
@@ -26,8 +27,14 @@ function Card({ item }) {
           <p>{item.RefGeografica}</p>
         </div>
 
-        <div className="font-semibold text-sm pt-1 text-center lg:text-left px-2">
-          Maginitud: <p>{item.Magnitud}</p>
+        <div
+          className={
+            item.Magnitud.trim().substring(0, 3) > "3.9"
+              ? `text-red-700 font-semibold text-sm pt-1 text-center lg:text-left px-2`
+              : `font-semibold text-sm pt-1 text-center lg:text-left px-2`
+          }
+        >
+          <p className="">Maginitud:</p> <p>{item.Magnitud}</p>
         </div>
         <div className="text-gray-700 font-semibold text-sm pt-1 text-center lg:text-left px-2">
           Profundidad: <p>{item.Profundidad} KM</p>
